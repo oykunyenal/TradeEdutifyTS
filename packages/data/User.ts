@@ -1,26 +1,26 @@
 class User{
-    private UserID: number;
-    private Username: string;
+    private _UserID: number;
+    private _Username: string;
 
-    constructor(userID: number, username : string){
-        this.UserID = userID;
-        this.Username = username;
+    constructor(UserID: number, Username : string){
+        this._UserID = UserID;
+        this._Username = Username;
     }
 
-    get userID() : number {
-        return this.UserID;
+    get UserID() : number {
+        return this._UserID;
     }
 
-    set userID(value: number){
-        this.UserID = value;
+    set UserID(value: number){
+        this._UserID = value;
     }
 
-    get username() : string {
-        return this.username;
+    get Username() : string {
+        return this._Username;
     }
 
-    set username(value: string){
-        this.username = value;
+    set Username(value: string){
+        this._Username = value;
     }
 }
 
